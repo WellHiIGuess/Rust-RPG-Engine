@@ -1,5 +1,14 @@
 extern crate core;
+
+mod area;
+mod draw_call;
+mod square_collider;
+mod game;
+
 use raylib::prelude::*;
+use std::cell::RefCell;
+use crate::area::Area;
+use crate::draw_call::DrawCall;
 
 fn main() {
     let (mut rl, thread) = raylib::init()
